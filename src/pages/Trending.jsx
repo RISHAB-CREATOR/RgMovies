@@ -18,7 +18,7 @@ function Trending() {
   return (
       <>
           <Helmet>
-          <title>BlueBird Movies | Trending</title>
+          <title>RG Movies | Trending</title>
         </Helmet>
           
         <div className='w-full bg-[#10141e] md:p-10 mb-20 md:mb-0'>
