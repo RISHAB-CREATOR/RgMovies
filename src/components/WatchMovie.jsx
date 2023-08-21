@@ -25,7 +25,7 @@ const WatchMovie = () => {
 
     const { id } = useParams()
 
-    document.title = `BlueBird Movies | ${moviedet.title}`
+    document.title = `RG Movies | ${moviedet.title}`
 
     return (
         <iframe allowFullScreen="true" style={{display: 'flex', alignItems:"center", justifyContent:"center", width:"100%", height:"100vh"}} src={getSmashystreamUrl(id)}></iframe>
