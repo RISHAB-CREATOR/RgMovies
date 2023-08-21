@@ -20,7 +20,7 @@ function Favoritepage() {
     return (
         <>
           <Helmet>
-            <title>BlueBird Movies | Favorite Movies</title>
+            <title>RG Movies | Favorite Movies</title>
           </Helmet>
             
             <div className='w-full bg-[#10141e] md:p-10 mb-20 md:mb-0'>
