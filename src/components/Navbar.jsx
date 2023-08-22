@@ -56,16 +56,14 @@ function Navbar() {
                 >
                     <Link to="/" className="logo flex flex-col justify-center items-center m-7 gap-2" onClick={() => setActivemobile(!activemobile)}>
                         <img src={logo} alt="logo" className="w-24" />
-                        <h1 className="text-gray-400/70 font-bold text-2xl text-center">RG Movies</h1>
+                        <h1 className="text-gray-400/70 font-bold text-2xl text-center">BlueBird Movies</h1>
                     </Link>
                 </motion.div>
 
 
                 <ul className="text-white font-semibold text-[16px] text-center px-5">
                     {Navdata.map((data) => (
-                        <>
-                            <Link key={data.id} to={data.link}><li key={data.id} className={`${header == data.headername ? 'bg-blue-500/20 border-blue-600 text-white' : 'bg-gray-500/20 border-black'} p-2 my-2  hover:bg-blue-500/20 rounded-[5px] border-2 hover:border-blue-600`} onClick={() => setActivemobile(!activemobile)}>{data.Name}</li></Link>
-                        </>
+                            <Link key={data.id} to={data.link}><li className={`${header == data.headername ? 'bg-blue-500/20 border-blue-600 text-white' : 'bg-gray-500/20 border-black'} p-2 my-2  hover:bg-blue-500/20 rounded-[5px] border-2 hover:border-blue-600`} onClick={() => setActivemobile(!activemobile)}>{data.Name}</li></Link>
                     ))}
 
                 </ul>
