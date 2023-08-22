@@ -44,8 +44,10 @@ function App() {
           <Route path='/upcoming' element={<Upcoming />} />
           <Route path='/moviedetail/:id' element={<Detail />} />
           <Route path="/favorite" element={<Favorite />} />
-          <Route path="/watchmovie/:id/:title" element={<WatchMovie />} /> {/*Route-1 For WatchMovie, Title is just for beauty of url, it is not used anywhere.*/}
-          <Route path="/watchmovie/:id" element={<WatchMovie />} /> {/*Route-2 For WatchMovie. Movie still available even if someone removes Title from end of the url.*/}
+          <Route path="/player/:id/:title" element={<Player />} /> {/*Route-1 For Player, Title is just for beauty of url, it is not used anywhere.*/}
+          <Route path="/player/:id" element={<Player />} /> {/*Route-2 For Player. Movie still available even if someone removes Title from end of the url.*/}
+          <Route path="/search/:query" element={<Container/>}/>
+          <Route path="/search/" element={<Container/>}/>
         </Routes>
       </div>
     </MovieProvider>
